@@ -23,6 +23,7 @@ onMounted(() => {
   <div class="board-list-container">
     <div class="header">
       <h2>게시판 목록</h2>
+      <button @click="router.push('/board/reg')" class="btn-write">글쓰기</button>
     </div>
 
     <table class="board-table">
