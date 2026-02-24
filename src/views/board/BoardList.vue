@@ -34,7 +34,11 @@ onMounted(() => {
         </tr>
       </thead>
       <tbody>
-        <tr v-for="board in boards" :key="board.idx">
+        <tr
+          v-for="board in boards"
+          :key="board.idx"
+          @click="$router.push(`/board/read/${board.idx}`)"
+        >
           <td>{{ board.idx }}</td>
           <td>{{ board.title }}</td>
           <td>{{ board.contents }}</td>
