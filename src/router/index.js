@@ -5,8 +5,18 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      name: 'home',
+      name: 'BoardList',
       component: () => import('../views/board/BoardList.vue'),
+    },
+    {
+      path: '/board/reg',
+      name: 'BoardRegister',
+      component: () => import('../views/board/BoardRegister.vue'),
+    },
+    {
+      path: '/board/read/:idx',
+      name: 'BoardDetail',
+      component: () => import('../views/board/BoardRead.vue'),
     },
   ],
 })

@@ -23,7 +23,7 @@ const submitPost = async () => {
       contents: contents.value,
     })
     alert('등록 완료!')
-    router.push('/board') // 등록 후 목록으로 이동
+    router.push('/') // 등록 후 목록으로 이동
   } catch (err) {
     console.error(err)
     alert('등록 실패!')
